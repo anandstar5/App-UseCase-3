@@ -1,0 +1,11 @@
+.navbar li{
+    cursor: pointer;
+}
+
+.success{
+    color: yellow;
+}
+
+.failed{
+    color: blue;
+}

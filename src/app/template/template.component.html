@@ -1,0 +1,53 @@
+<main class="form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{currentPageFromParentComponent}}</div>
+                    <div class="card-body">       
+                        <form (ngSubmit)="onSubmit()">         
+                            <div class="form-group row">
+                                <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="username" name="username" class="form-control" [(ngModel)]="username">
+                                    <span *ngIf="username===''" style="color:red;">Please Enter Name</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Email" class="col-md-4 col-form-label text-md-right">Email
+                                    Address</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="Email" name="Email" class="form-control" [(ngModel)]="Email">
+                                    <span *ngIf="Email===''" style="color:red;">Please Enter Email</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Phone" class="col-md-4 col-form-label text-md-right">Phone
+                                    Number</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="Phone" name="Phone" class="form-control" [(ngModel)]="Phone" >
+                                    <span *ngIf="Phone===''" style="color:red;">Please Enter Phone</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="password" name="password" class="form-control" [(ngModel)]="password">
+                                    <span *ngIf="password===''" style="color:red;">Please Enter Password</span>
+                                </div>
+                            </div>                            
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">Register</button>                               
+                            </div>            
+                        </form>                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- <app-reactive (messageevent)="receiveMessage($event)" ></app-reactive>
+<p>{{childdataReact}}</p> -->
+
